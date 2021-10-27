@@ -1,0 +1,17 @@
+
+<center style="margin-top: 50px;">YOU CAN SIGNUP HERE</center>
+
+
+<br>
+<br>
+<a href="{% url 'loginuser'%}">Login</a>
+<hr>
+{% if error %}
+	{{ error }}
+
+{% endif %}
+<form method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" name="submit">
+</form>

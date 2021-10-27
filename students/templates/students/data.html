@@ -1,0 +1,13 @@
+
+<div class="main">
+	<center style="margin-top: 50px;">SAVE AGIRUCHU MACHAAA</center>
+</div>
+
+	<div class="sub">
+		<form  method="POST" action="{% url 'logoutuser' %}">
+		    {% csrf_token %}
+		    <button  type="submit">Logout</button>
+		</form>
+	</div>
+
+
